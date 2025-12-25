@@ -1,0 +1,113 @@
+Token Type: 1, Value: <
+Token Type: 0, Value: html
+Token Type: 0, Value: lang
+Token Type: 6, Value: =
+Token Type: 5, Value: en
+Token Type: 2, Value: >
+Token Type: 1, Value: <
+Token Type: 0, Value: head
+Token Type: 2, Value: >
+Token Type: 1, Value: <
+Token Type: 0, Value: meta
+Token Type: 0, Value: charset
+Token Type: 6, Value: =
+Token Type: 5, Value: UTF-8
+Token Type: 2, Value: >
+Token Type: 1, Value: <
+Token Type: 0, Value: meta
+Token Type: 0, Value: name
+Token Type: 6, Value: =
+Token Type: 5, Value: viewport
+Token Type: 0, Value: content
+Token Type: 6, Value: =
+Token Type: 5, Value: width=device-width, initial-scale=1.0
+Token Type: 2, Value: >
+Token Type: 1, Value: <
+Token Type: 0, Value: title
+Token Type: 2, Value: >
+Token Type: 4, Value: My First Webpage
+Token Type: 1, Value: <
+Token Type: 3, Value: /
+Token Type: 0, Value: title
+Token Type: 2, Value: >
+Token Type: 1, Value: <
+Token Type: 3, Value: /
+Token Type: 0, Value: head
+Token Type: 2, Value: >
+Token Type: 1, Value: <
+Token Type: 0, Value: body
+Token Type: 2, Value: >
+Token Type: 1, Value: <
+Token Type: 0, Value: h1
+Token Type: 2, Value: >
+Token Type: 4, Value: Welcome to My Webpage!
+Token Type: 1, Value: <
+Token Type: 3, Value: /
+Token Type: 0, Value: h1
+Token Type: 2, Value: >
+Token Type: 1, Value: <
+Token Type: 0, Value: p
+Token Type: 2, Value: >
+Token Type: 4, Value: This is a simple example of an HTML page.
+Token Type: 1, Value: <
+Token Type: 3, Value: /
+Token Type: 0, Value: p
+Token Type: 2, Value: >
+Token Type: 1, Value: <
+Token Type: 0, Value: p
+Token Type: 2, Value: >
+Token Type: 4, Value: Check out 
+Token Type: 1, Value: <
+Token Type: 0, Value: a
+Token Type: 0, Value: href
+Token Type: 6, Value: =
+Token Type: 5, Value: https://www.example.com
+Token Type: 0, Value: target
+Token Type: 6, Value: =
+Token Type: 5, Value: _blank
+Token Type: 2, Value: >
+Token Type: 4, Value: this link
+Token Type: 1, Value: <
+Token Type: 3, Value: /
+Token Type: 0, Value: a
+Token Type: 2, Value: >
+Token Type: 4, Value: for more information.
+Token Type: 1, Value: <
+Token Type: 3, Value: /
+Token Type: 0, Value: p
+Token Type: 2, Value: >
+Token Type: 1, Value: <
+Token Type: 3, Value: /
+Token Type: 0, Value: body
+Token Type: 2, Value: >
+Token Type: 1, Value: <
+Token Type: 3, Value: /
+Token Type: 0, Value: html
+Token Type: 2, Value: >
+Token Type: 7, Value: 
+Parsed AST:
+<Document>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+      <title>
+          [Text: "My First Webpage"]
+      </title>
+    </head>
+    <body>
+      <h1>
+          [Text: "Welcome to My Webpage!"]
+      </h1>
+      <p>
+          [Text: "This is a simple example of an HTML page."]
+      </p>
+      <p>
+          [Text: "Check out "]
+        <a target="_blank" href="https://www.example.com">
+            [Text: "this link"]
+        </a>
+          [Text: "for more information."]
+      </p>
+    </body>
+  </html>

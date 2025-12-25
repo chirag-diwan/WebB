@@ -14,7 +14,7 @@ class Lexer {
     int Consume();
     int Peek();
     void SkipWhitespace();
-
+    std::string ConsumeUntil(char delimiter) ;
 
   public:
     Lexer(const char * HTMLPath);

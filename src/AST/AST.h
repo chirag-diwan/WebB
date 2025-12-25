@@ -1,9 +1,10 @@
 #pragma once
 
 
+#include <memory>
 #include <vector>
 #include "../Token/Token.h"
-
+#include "../node/node.h"
 
 class Parser {
   private:
@@ -11,13 +12,15 @@ class Parser {
     size_t currentIndex = 0;
     Token currentToken;
   private:
+    void Advance();
+    Token Peek();
+    Token PeekNext();
+    Token Consume();
+    bool Assert(TokenType expected);
+    bool Present(TokenType tokenType);
+  public:
     Parser(std::vector<Token>& tokens) : tokens(tokens) {
       currentToken = tokens[0];
     }
-    void Advance();
-    Token Peek();
-    Token Consume();
-    bool Assert(TokenType expected);
-  public:
-    void parse(std::vector<Token>& tokens);
+    std::unique_ptr<Node> MakeAST();
 };
